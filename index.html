@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id="employees-container">
+        <button id="table-btn" >0</button>   
+  <table id="employees-table">
+        <thead>
+            <tr id="tr">
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Départemenemployees-tablet</th>
+                <th>Poste</th>
+                <th>Salaire</th>
+                <th>age</th>
+                <th>projects</th>
+                <th>skills</th>
+                <th>joinDate</th>
+                <th>languages</th>
+            </tr>
+        </thead>
+        <tbody id="employees-tbody" >
+            <!-- Les employés seront insérés ici dynamiquement -->
+            
+        </tbody>
+    </table>
+</div>
+
+
+<form id="employee-form">
+    <div id="form-fields">
+        <input type="text" name="firstName" placeholder="Prénom" id="first_name" required>
+        <input type="text" name="lastName" placeholder="Nom" id="last_name" required>
+        <input type="number" name="age" placeholder="Âge" min="18" max="65" id="age">
+        <select name="department">
+            <option value="">Choisir un département</option>
+            <option value="Développement">Développement</option>
+            <option value="Design">Design</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Management">Management</option>
+        </select>
+    </div>
+    <button type="button" id="add-skill-btn">+ Compétence</button>
+    <div id="skills-container"></div>
+    <button type="submit">Ajouter l'employé</button>
+</form>
+</body>
+</html>
